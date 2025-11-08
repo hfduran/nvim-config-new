@@ -41,3 +41,6 @@ require("lazy").setup({
     },
   },
 })
+
+require('lualine').setup()
+require("bufferline").setup{}

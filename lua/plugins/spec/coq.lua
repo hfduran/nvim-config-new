@@ -22,7 +22,10 @@ return {
       auto_start = 'shut-up', -- if you want to start COQ at startup
       completion = {
         always = false,       -- disable automatic popup
-        sticky_manual = false
+        sticky_manual = false,
+      },
+      limits = {
+        completion_manual_timeout = 0.1
       }
       -- Your COQ settings here
     }
