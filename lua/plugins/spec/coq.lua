@@ -1,12 +1,12 @@
 return {
   "neovim/nvim-lspconfig", -- REQUIRED: for native Neovim LSP integration
-  lazy = false, -- REQUIRED: tell lazy.nvim to start this plugin at startup
+  lazy = false,            -- REQUIRED: tell lazy.nvim to start this plugin at startup
   dependencies = {
     -- main one
-    { "ms-jpq/coq_nvim", branch = "coq" },
+    { "ms-jpq/coq_nvim",       branch = "coq" },
 
     -- 9000+ Snippets
-    { "ms-jpq/coq.artifacts", branch = "artifacts" },
+    { "ms-jpq/coq.artifacts",  branch = "artifacts" },
 
     -- lua & third party sources -- See https://github.com/ms-jpq/coq.thirdparty
     -- Need to **configure separately**
@@ -19,8 +19,12 @@ return {
   },
   init = function()
     vim.g.coq_settings = {
-        auto_start = 'shut-up', -- if you want to start COQ at startup
-        -- Your COQ settings here
+      auto_start = 'shut-up', -- if you want to start COQ at startup
+      completion = {
+        always = false,       -- disable automatic popup
+        sticky_manual = false
+      }
+      -- Your COQ settings here
     }
   end,
   config = function()

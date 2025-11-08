@@ -28,3 +28,18 @@ vim.keymap.set('n', '<leader>fw',
 vim.keymap.set('n', '<C-n>',
   '<Cmd>NERDTreeToggle<CR>'
   , { remap = true })
+
+-- hop
+vim.keymap.set('n', '<leader><leader>j',
+  '<Cmd>HopLineAC<CR>'
+  , { remap = true })
+vim.keymap.set('n', '<leader><leader>k',
+  '<Cmd>HopLineBC<CR>'
+  , { remap = true })
+vim.keymap.set('n', '<leader><leader>w',
+  '<Cmd>HopWordAC<CR>'
+  , { remap = true })
+vim.keymap.set('n', '<leader><leader>b',
+  '<Cmd>HopWordBC<CR>'
+  , { remap = true })
+
