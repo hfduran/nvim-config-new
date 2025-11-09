@@ -21,12 +21,21 @@ return {
     vim.g.coq_settings = {
       auto_start = 'shut-up', -- if you want to start COQ at startup
       completion = {
-        always = false,       -- disable automatic popup
-        sticky_manual = false,
+        always = true,
+        sticky_manual = true,
+        skip_after = { "{", "}", "[", "]", " ", "\t", "\n" }
       },
       limits = {
         completion_manual_timeout = 0.1
-      }
+      },
+      display = {
+        icons = {
+          mode = "short"
+        },
+        pum = {
+          y_max_len = 5
+        }
+      },
       -- Your COQ settings here
     }
   end,
