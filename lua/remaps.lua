@@ -1,6 +1,5 @@
 local telescope_builtin = require("telescope.builtin")
 
--- close tab
 vim.api.nvim_set_keymap('n', '<A-q>', '<Cmd>bdel<CR>', { noremap = true })
 
 -- LSP
@@ -42,4 +41,29 @@ vim.keymap.set('n', '<leader><leader>w',
 vim.keymap.set('n', '<leader><leader>b',
   '<Cmd>HopWordBC<CR>'
   , { remap = true })
+
+  -- bufferline
+vim.api.nvim_set_keymap('n', '<leader>tt', '<Cmd>BufferLinePick<CR>', { noremap = true, silent = true, desc="pick tab"})
+vim.api.nvim_set_keymap('n', '<leader>tp', '<Cmd>BufferLineTogglePin<CR>', { noremap = true, silent = true, desc="pin tab"})
+vim.api.nvim_set_keymap('n', '<leader>to', '<Cmd>BufferLineCloseOthers<CR>', { noremap = true, silent = true, desc="close others"})
+vim.api.nvim_set_keymap('n', '<leader>td', '<Cmd>BufferLineSortByDirectory<CR>', { noremap = true, desc="sort tabs by dir" })
+vim.api.nvim_set_keymap('n', '<leader>th', '<Cmd>BufferLineMovePrev<CR>', { noremap = true, desc="tab move prev"  })
+vim.api.nvim_set_keymap('n', '<leader>tl', '<Cmd>BufferLineMoveNext<CR>', { noremap = true, desc="tab move next" })
+
+vim.api.nvim_set_keymap('n', '<A-1>', '<Cmd>BufferLineGoToBuffer 1<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-2>', '<Cmd>BufferLineGoToBuffer 2<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-3>', '<Cmd>BufferLineGoToBuffer 3<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-4>', '<Cmd>BufferLineGoToBuffer 4<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-5>', '<Cmd>BufferLineGoToBuffer 5<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-6>', '<Cmd>BufferLineGoToBuffer 6<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-7>', '<Cmd>BufferLineGoToBuffer 7<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-8>', '<Cmd>BufferLineGoToBuffer 8<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-1>', '<Cmd>BufferLineGoToBuffer 1<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-2>', '<Cmd>BufferLineGoToBuffer 2<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-3>', '<Cmd>BufferLineGoToBuffer 3<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-4>', '<Cmd>BufferLineGoToBuffer 4<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-5>', '<Cmd>BufferLineGoToBuffer 5<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-6>', '<Cmd>BufferLineGoToBuffer 6<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-7>', '<Cmd>BufferLineGoToBuffer 7<CR>', { noremap = true })
+vim.api.nvim_set_keymap('i', '<A-8>', '<Cmd>BufferLineGoToBuffer 8<CR>', { noremap = true })
 
