@@ -1,7 +1,7 @@
 vim.cmd.colorscheme("moonfly")
 
 vim.opt.clipboard='unnamedplus'
--- vim.opt.hidden=true
+vim.opt.hidden=true
 
 vim.opt.ignorecase=true
 -- vim.opt.smartcase=true

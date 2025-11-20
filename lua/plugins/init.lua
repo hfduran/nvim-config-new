@@ -44,3 +44,6 @@ require("lazy").setup({
 
 require('lualine').setup()
 require("bufferline").setup{}
+require('toggleterm').setup{
+  open_mapping=[[<C-/>]]
+}
