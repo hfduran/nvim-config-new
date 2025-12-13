@@ -13,6 +13,7 @@ vim.api.nvim_set_keymap('n', 'gr', '<Cmd>lua vim.lsp.buf.references()<CR>', { no
 vim.api.nvim_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true, desc="type definition"})
 vim.api.nvim_set_keymap('n', 'gi', '<Cmd>lua vim.lsp.buf.implementation()<CR>', { noremap = true, silent = true, desc="type definition"})
 vim.api.nvim_set_keymap('n', 'gn', '<Cmd>lua vim.lsp.buf.rename()<CR>', { noremap = true, silent = true, desc="rename"})
+vim.api.nvim_set_keymap('n', 'gt', '<Cmd>lua vim.lsp.buf.type_definition()<CR>', { noremap = true, silent = true, desc="rename"})
 
 -- telescope
 vim.keymap.set('n', '<leader>ff',
@@ -58,12 +59,3 @@ vim.api.nvim_set_keymap('n', '<A-5>', '<Cmd>BufferLineGoToBuffer 5<CR>', { norem
 vim.api.nvim_set_keymap('n', '<A-6>', '<Cmd>BufferLineGoToBuffer 6<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<A-7>', '<Cmd>BufferLineGoToBuffer 7<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<A-8>', '<Cmd>BufferLineGoToBuffer 8<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-1>', '<Cmd>BufferLineGoToBuffer 1<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-2>', '<Cmd>BufferLineGoToBuffer 2<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-3>', '<Cmd>BufferLineGoToBuffer 3<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-4>', '<Cmd>BufferLineGoToBuffer 4<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-5>', '<Cmd>BufferLineGoToBuffer 5<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-6>', '<Cmd>BufferLineGoToBuffer 6<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-7>', '<Cmd>BufferLineGoToBuffer 7<CR>', { noremap = true })
-vim.api.nvim_set_keymap('i', '<A-8>', '<Cmd>BufferLineGoToBuffer 8<CR>', { noremap = true })
-
